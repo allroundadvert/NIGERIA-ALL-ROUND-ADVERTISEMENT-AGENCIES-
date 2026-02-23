@@ -21,15 +21,12 @@ body {
     color: #f5d77a;
 }
 
-/* ===== TOP IMAGE ===== */
-.top-banner {
-    position: relative;
-}
-
+/* ===== TOP IMAGE (REDUCED & RESPONSIVE) ===== */
 .top-banner img {
     width: 100%;
-    height: 340px;
-    object-fit: cover;
+    height: 220px;           /* reduced size */
+    object-fit: contain;     /* fit to screen */
+    background: #000;
     border-bottom: 3px solid #d4af37;
 }
 
@@ -79,16 +76,6 @@ body {
     font-size: 26px;
     margin-bottom: 18px;
     color: #ffd700;
-    position: relative;
-}
-
-.section h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(to right, transparent, gold, transparent);
-    margin: 10px auto 0;
 }
 
 .section p {
@@ -175,7 +162,8 @@ footer {
 
 <!-- TOP IMAGE -->
 <div class="top-banner">
-<img src="https://raw.githubusercontent.com/allroundadvert/NIGERIA-ALL-ROUND-ADVERTISEMENT-AGENCIES-/96a25eb995ccb8a0e9a06d992ec231890df848f1/Screenshot_20260223-204747.jpg" alt="Nigeria All Round Advertisement Agency">
+<img src="https://raw.githubusercontent.com/allroundadvert/NIGERIA-ALL-ROUND-ADVERTISEMENT-AGENCIES-/96a25eb995ccb8a0e9a06d992ec231890df848f1/Screenshot_20260223-204747.jpg"
+alt="Nigeria All Round Advertisement Agency">
 </div>
 
 <!-- BUTTONS -->
@@ -194,15 +182,14 @@ href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%2
 <div class="section">
 <h2>Nigeria All Round Advertisement Agency</h2>
 <p>
-We are a premium advertising agency delivering high-impact Audio, Video, AI Video,
-TV, Radio, ITV and Outdoor advertisements designed to grow your brand across Nigeria.
+Premium advertising solutions — Audio, Video, AI Video, TV, Radio, ITV and Outdoor Ads
+that give your brand strong visibility across Nigeria.
 </p>
 </div>
 
 <!-- SERVICES -->
 <div class="section">
 <h2>Our Core Services</h2>
-
 <div class="services">
 <div class="service-box">🎬 Video Advertisement</div>
 <div class="service-box">🤖 AI Video Advertisement</div>
@@ -220,6 +207,9 @@ TV, Radio, ITV and Outdoor advertisements designed to grow your brand across Nig
 <form onsubmit="sendToWhatsApp(); return false;">
 <input id="name" type="text" placeholder="Your Full Name" required>
 <input id="business" type="text" placeholder="Business / Brand Name" required>
+
+<!-- NEW ADDRESS FIELD -->
+<input id="address" type="text" placeholder="Business / Office Address" required>
 
 <select id="service">
 <option>Video Advertisement</option>
@@ -244,12 +234,14 @@ TV, Radio, ITV and Outdoor advertisements designed to grow your brand across Nig
 function sendToWhatsApp() {
     const name = document.getElementById("name").value;
     const business = document.getElementById("business").value;
+    const address = document.getElementById("address").value;
     const service = document.getElementById("service").value;
     const message = document.getElementById("message").value;
 
     const text =
         "Hello, my name is " + name +
         ". Business Name: " + business +
+        ". Address: " + address +
         ". Advert Type: " + service +
         ". Details: " + message;
 
