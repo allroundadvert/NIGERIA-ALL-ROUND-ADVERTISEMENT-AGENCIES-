@@ -6,111 +6,179 @@
 
 <title>Nigeria All Round Advertisement Agency</title>
 
-<meta name="description" content="Nigeria All Round Advertisement Agency – Audio, Video, AI Video, TV, Radio, Outdoor and Digital Advert Services.">
+<meta name="description" content="Nigeria All Round Advertisement Agency – Premium Audio, Video, AI Video, TV, Radio & Outdoor Advertising Solutions.">
 
 <style>
+/* ===== GLOBAL ===== */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #000;
-    color: gold;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: radial-gradient(circle at top, #111 0%, #000 60%);
+    color: #f5d77a;
 }
 
-/* Top Banner */
+/* ===== TOP IMAGE ===== */
+.top-banner {
+    position: relative;
+}
+
 .top-banner img {
     width: 100%;
-    max-height: 350px;
+    height: 340px;
     object-fit: cover;
-    border-bottom: 4px solid gold;
+    border-bottom: 3px solid #d4af37;
 }
 
-/* Buttons */
+/* ===== BUTTON BAR ===== */
 .action-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    padding: 20px;
+    gap: 18px;
+    padding: 22px;
+    background: linear-gradient(to bottom, #000, #050505);
 }
 
 .action-buttons a {
     text-decoration: none;
-    padding: 14px 22px;
-    border-radius: 40px;
-    font-weight: bold;
-    box-shadow: 0 0 10px gold;
+    padding: 14px 26px;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 12px rgba(212,175,55,0.7);
 }
 
 .whatsapp-btn {
-    background: linear-gradient(45deg, #25D366, gold);
+    background: linear-gradient(45deg, #25D366, #d4af37);
     color: #000;
 }
 
 .call-btn {
-    background: linear-gradient(45deg, gold, #b8860b);
+    background: linear-gradient(45deg, #d4af37, #b8962e);
     color: #000;
 }
 
-/* Section */
+.action-buttons a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 20px rgba(212,175,55,1);
+}
+
+/* ===== SECTIONS ===== */
 .section {
-    padding: 30px 20px;
-    max-width: 900px;
+    max-width: 950px;
     margin: auto;
+    padding: 40px 22px;
 }
 
 .section h2 {
     text-align: center;
-    border-bottom: 2px solid gold;
-    padding-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 18px;
+    color: #ffd700;
+    position: relative;
 }
 
-/* Form */
-form {
+.section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, gold, transparent);
+    margin: 10px auto 0;
+}
+
+.section p {
+    text-align: center;
+    line-height: 1.7;
+    color: #e6c96f;
+}
+
+/* ===== SERVICES ===== */
+.services {
     display: grid;
-    gap: 15px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-box {
+    background: linear-gradient(145deg, #0b0b0b, #020202);
+    border: 1px solid #d4af37;
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(212,175,55,0.25);
+    transition: 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(212,175,55,0.8);
+}
+
+/* ===== FORM ===== */
+form {
+    margin-top: 30px;
+    display: grid;
+    gap: 16px;
 }
 
 input, select, textarea {
-    padding: 12px;
-    border-radius: 6px;
+    padding: 14px;
+    border-radius: 10px;
     border: none;
+    background: #0c0c0c;
+    color: gold;
     font-size: 15px;
+    box-shadow: inset 0 0 6px rgba(212,175,55,0.4);
+}
+
+textarea {
+    resize: none;
 }
 
 button {
-    background: gold;
-    color: #000;
-    padding: 14px;
-    font-size: 16px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 50px;
     border: none;
-    border-radius: 30px;
-    cursor: pointer;
+    background: linear-gradient(45deg, #ffd700, #b8962e);
+    color: #000;
+    font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(212,175,55,0.9);
+    transition: 0.3s ease;
 }
 
 button:hover {
-    background: #b8860b;
+    transform: scale(1.05);
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
+    margin-top: 50px;
+    padding: 22px;
     text-align: center;
-    padding: 20px;
-    border-top: 2px solid gold;
-    margin-top: 40px;
+    border-top: 2px solid #d4af37;
+    color: #c9ab4b;
+    font-size: 14px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- Top Image -->
+<!-- TOP IMAGE -->
 <div class="top-banner">
-<img src="https://raw.githubusercontent.com/allroundadvert/NIGERIA-ALL-ROUND-ADVERTISEMENT-AGENCIES-/96a25eb995ccb8a0e9a06d992ec231890df848f1/Screenshot_20260223-204747.jpg"
-alt="Nigeria All Round Advertisement Agency">
+<img src="https://raw.githubusercontent.com/allroundadvert/NIGERIA-ALL-ROUND-ADVERTISEMENT-AGENCIES-/96a25eb995ccb8a0e9a06d992ec231890df848f1/Screenshot_20260223-204747.jpg" alt="Nigeria All Round Advertisement Agency">
 </div>
 
-<!-- Action Buttons -->
+<!-- BUTTONS -->
 <div class="action-buttons">
 <a class="whatsapp-btn" target="_blank"
 href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%20advertisement%20services%20I%20saw%20online">
@@ -122,35 +190,36 @@ href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%2
 </a>
 </div>
 
-<!-- About -->
+<!-- INTRO -->
 <div class="section">
-<h2>Welcome to Nigeria All Round Advertisement Agency</h2>
-<p style="text-align:center;">
-We deliver powerful advertisements that convert — Audio, Video, AI Video, TV, Radio,
-ITV, Outdoor and Digital Advertising solutions across Nigeria.
+<h2>Nigeria All Round Advertisement Agency</h2>
+<p>
+We are a premium advertising agency delivering high-impact Audio, Video, AI Video,
+TV, Radio, ITV and Outdoor advertisements designed to grow your brand across Nigeria.
 </p>
 </div>
 
-<!-- Services -->
+<!-- SERVICES -->
 <div class="section">
-<h2>Our Advertisement Services</h2>
-<ul>
-<li>🎬 Video Advertisement</li>
-<li>🤖 AI Video Advertisement</li>
-<li>📻 Radio Advertisement</li>
-<li>📺 TV & ITV Advertisement</li>
-<li>🖼 Outdoor Billboard Advertisement</li>
-<li>🎧 Audio Advertisement</li>
-</ul>
+<h2>Our Core Services</h2>
+
+<div class="services">
+<div class="service-box">🎬 Video Advertisement</div>
+<div class="service-box">🤖 AI Video Advertisement</div>
+<div class="service-box">📻 Radio Advertisement</div>
+<div class="service-box">📺 TV & ITV Advertisement</div>
+<div class="service-box">🖼 Outdoor Billboard Ads</div>
+<div class="service-box">🎧 Audio Advertisement</div>
+</div>
 </div>
 
-<!-- Advert Request Form -->
+<!-- FORM -->
 <div class="section">
 <h2>Request an Advertisement</h2>
 
 <form onsubmit="sendToWhatsApp(); return false;">
-<input type="text" id="name" placeholder="Your Full Name" required>
-<input type="text" id="business" placeholder="Business / Brand Name" required>
+<input id="name" type="text" placeholder="Your Full Name" required>
+<input id="business" type="text" placeholder="Business / Brand Name" required>
 
 <select id="service">
 <option>Video Advertisement</option>
@@ -168,22 +237,23 @@ ITV, Outdoor and Digital Advertising solutions across Nigeria.
 </div>
 
 <footer>
-<p>© 2026 Nigeria All Round Advertisement Agency</p>
+© 2026 Nigeria All Round Advertisement Agency — Premium Advertising Solutions
 </footer>
 
 <script>
 function sendToWhatsApp() {
-    var name = document.getElementById("name").value;
-    var business = document.getElementById("business").value;
-    var service = document.getElementById("service").value;
-    var message = document.getElementById("message").value;
+    const name = document.getElementById("name").value;
+    const business = document.getElementById("business").value;
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value;
 
-    var text = "Hello, my name is " + name +
-               ". Business Name: " + business +
-               ". Advert Type: " + service +
-               ". Details: " + message;
+    const text =
+        "Hello, my name is " + name +
+        ". Business Name: " + business +
+        ". Advert Type: " + service +
+        ". Details: " + message;
 
-    var url = "https://wa.me/2348145891674?text=" + encodeURIComponent(text);
+    const url = "https://wa.me/2348145891674?text=" + encodeURIComponent(text);
     window.open(url, "_blank");
 }
 </script>
