@@ -3,241 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NIGERIA ALL ROUND ADVERTISEMENT AGENCY</title>
+
+<title>Nigeria All Round Advertisement Agency</title>
+
+<meta name="description" content="Nigeria All Round Advertisement Agency – Audio, Video, AI Video, TV, Radio, Outdoor and Digital Advert Services.">
 
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #0b0b0b;
-    color: #f5f5f5;
-}
-
-header {
-    background: linear-gradient(135deg, #000, #1a1a1a);
-    text-align: center;
-    padding: 40px 20px;
-    border-bottom: 2px solid gold;
-}
-
-header h1 {
+    font-family: Arial, sans-serif;
+    background: #000;
     color: gold;
-    font-size: 28px;
-    margin-bottom: 10px;
 }
 
-header p {
-    color: #ddd;
-    font-size: 16px;
+/* Top Banner */
+.top-banner img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-bottom: 4px solid gold;
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
+/* Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     padding: 20px;
 }
 
+.action-buttons a {
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 40px;
+    font-weight: bold;
+    box-shadow: 0 0 10px gold;
+}
+
+.whatsapp-btn {
+    background: linear-gradient(45deg, #25D366, gold);
+    color: #000;
+}
+
+.call-btn {
+    background: linear-gradient(45deg, gold, #b8860b);
+    color: #000;
+}
+
+/* Section */
 .section {
-    background: #121212;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    border: 1px solid #2a2a2a;
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .section h2 {
-    color: gold;
-    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid gold;
+    padding-bottom: 10px;
 }
 
-label {
-    font-weight: bold;
-    color: #ccc;
+/* Form */
+form {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-input, textarea, select {
-    width: 100%;
-    padding: 14px;
-    margin-top: 6px;
-    margin-bottom: 18px;
+input, select, textarea {
+    padding: 12px;
     border-radius: 6px;
-    border: 1px solid #333;
-    background: #000;
-    color: #fff;
-}
-
-textarea {
-    resize: none;
+    border: none;
+    font-size: 15px;
 }
 
 button {
-    width: 100%;
-    padding: 16px;
     background: gold;
     color: #000;
+    padding: 14px;
     font-size: 16px;
-    font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
-    background: #e6c200;
+    background: #b8860b;
 }
 
-.contact-buttons a {
-    display: block;
-    text-align: center;
-    padding: 15px;
-    margin: 12px 0;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-}
-
-.call { background: #198754; }
-.whatsapp { background: #25D366; }
-.email { background: #0d6efd; }
-.facebook { background: #1877f2; }
-.tiktok { background: #000; border: 1px solid gold; }
-
+/* Footer */
 footer {
-    background: #000;
     text-align: center;
-    padding: 18px;
+    padding: 20px;
     border-top: 2px solid gold;
-    color: #aaa;
+    margin-top: 40px;
 }
 </style>
-
-<script>
-function sendToWhatsApp() {
-    var advertType = document.getElementById("advertType").value;
-    var businessName = document.getElementById("businessName").value;
-    var address = document.getElementById("address").value;
-    var phone = document.getElementById("phone").value;
-    var email = document.getElementById("email").value;
-    var description = document.getElementById("description").value;
-    var aiStyle = document.getElementById("aiStyle").value;
-    var aiDuration = document.getElementById("aiDuration").value;
-    var aiVoice = document.getElementById("aiVoice").value;
-
-    var message =
-        "NEW ADVERT REQUEST%n%n" +
-        "Advert Type: " + advertType + "%n" +
-        "Business Name: " + businessName + "%n" +
-        "Address: " + address + "%n" +
-        "Phone: " + phone + "%n" +
-        "Email: " + email + "%n%n" +
-        "Business Description:%n" + description + "%n%n" +
-        "AI Video Details:%n" +
-        "Style: " + aiStyle + "%n" +
-        "Duration: " + aiDuration + "%n" +
-        "Voice Preference: " + aiVoice;
-
-    var url = "https://wa.me/2348077063558?text=" + encodeURIComponent(message);
-    window.open(url, "_blank");
-}
-</script>
 </head>
 
 <body>
 
-<header>
-    <h1>NIGERIA ALL ROUND ADVERTISEMENT AGENCY</h1>
-    <p>Your One-Stop Solution for Audio, Video, AI, TV, Radio & Outdoor Advertising</p>
-</header>
+<!-- Top Image -->
+<div class="top-banner">
+<img src="https://raw.githubusercontent.com/allroundadvert/NIGERIA-ALL-ROUND-ADVERTISEMENT-AGENCIES-/96a25eb995ccb8a0e9a06d992ec231890df848f1/Screenshot_20260223-204747.jpg"
+alt="Nigeria All Round Advertisement Agency">
+</div>
 
-<div class="container">
+<!-- Action Buttons -->
+<div class="action-buttons">
+<a class="whatsapp-btn" target="_blank"
+href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%20advertisement%20services%20I%20saw%20online">
+💬 WhatsApp Us
+</a>
 
-    <!-- Advert Type -->
-    <div class="section">
-        <h2>Select Advertisement Type</h2>
-        <select id="advertType">
-            <option>Audio Advert</option>
-            <option>Video Advert</option>
-            <option>AI Video Advert</option>
-            <option>TV Advert</option>
-            <option>Radio Advert</option>
-            <option>Outdoor Advert</option>
-            <option>Online / ITV Advert</option>
-        </select>
-    </div>
+<a class="call-btn" href="tel:08077063558">
+📞 Call Us
+</a>
+</div>
 
-    <!-- Client Info -->
-    <div class="section">
-        <h2>Client Information</h2>
+<!-- About -->
+<div class="section">
+<h2>Welcome to Nigeria All Round Advertisement Agency</h2>
+<p style="text-align:center;">
+We deliver powerful advertisements that convert — Audio, Video, AI Video, TV, Radio,
+ITV, Outdoor and Digital Advertising solutions across Nigeria.
+</p>
+</div>
 
-        <label>Business Name</label>
-        <input id="businessName" type="text" placeholder="Your business name">
+<!-- Services -->
+<div class="section">
+<h2>Our Advertisement Services</h2>
+<ul>
+<li>🎬 Video Advertisement</li>
+<li>🤖 AI Video Advertisement</li>
+<li>📻 Radio Advertisement</li>
+<li>📺 TV & ITV Advertisement</li>
+<li>🖼 Outdoor Billboard Advertisement</li>
+<li>🎧 Audio Advertisement</li>
+</ul>
+</div>
 
-        <label>Business Address</label>
-        <input id="address" type="text" placeholder="Business address">
+<!-- Advert Request Form -->
+<div class="section">
+<h2>Request an Advertisement</h2>
 
-        <label>Phone Number</label>
-        <input id="phone" type="tel" placeholder="Phone number">
+<form onsubmit="sendToWhatsApp(); return false;">
+<input type="text" id="name" placeholder="Your Full Name" required>
+<input type="text" id="business" placeholder="Business / Brand Name" required>
 
-        <label>Email Address</label>
-        <input id="email" type="email" placeholder="Email address">
+<select id="service">
+<option>Video Advertisement</option>
+<option>AI Video Advertisement</option>
+<option>Radio Advertisement</option>
+<option>TV / ITV Advertisement</option>
+<option>Outdoor Advertisement</option>
+<option>Audio Advertisement</option>
+</select>
 
-        <label>What do you sell?</label>
-        <textarea id="description" rows="4" placeholder="Brief description of your product or service"></textarea>
-    </div>
+<textarea id="message" rows="4" placeholder="Describe your advert request"></textarea>
 
-    <!-- AI Video Advert Section -->
-    <div class="section">
-        <h2>AI Video Advert Request</h2>
-
-        <label>Preferred AI Video Style</label>
-        <select id="aiStyle">
-            <option>Realistic</option>
-            <option>Animated</option>
-            <option>Explainer</option>
-            <option>Luxury / Cinematic</option>
-            <option>Social Media Viral</option>
-        </select>
-
-        <label>Video Duration</label>
-        <select id="aiDuration">
-            <option>8 Seconds</option>
-            <option>15 Seconds</option>
-            <option>30 Seconds</option>
-            <option>60 Seconds</option>
-        </select>
-
-        <label>Voice Preference</label>
-        <select id="aiVoice">
-            <option>Male Voice</option>
-            <option>Female Voice</option>
-            <option>No Voice (Text Only)</option>
-        </select>
-    </div>
-
-    <!-- Submit -->
-    <div class="section">
-        <button onclick="sendToWhatsApp()">Submit & Send to WhatsApp</button>
-    </div>
-
-    <!-- Contact Buttons -->
-    <div class="section">
-        <h2>Contact Us Instantly</h2>
-
-        <div class="contact-buttons">
-            <a href="tel:08077063558" class="call">📞 Call: 08077063558</a>
-            <a href="https://wa.me/2348077063558" class="whatsapp">💬 WhatsApp Us</a>
-            <a href="mailto:worshipmove@gmail.com" class="email">📧 Email Us</a>
-            <a href="https://www.facebook.com/Nijabussinesstalkshow?mibextid=ZbWKwL" class="facebook">📘 Facebook</a>
-            <a href="https://www.tiktok.com/@nollywoodprince1?_r=1&_t=ZS-94ATMeTTnYW" class="tiktok">🎵 TikTok</a>
-        </div>
-    </div>
-
+<button type="submit">Send Request via WhatsApp</button>
+</form>
 </div>
 
 <footer>
-    <p>© 2026 | NIGERIA ALL ROUND ADVERTISEMENT AGENCY</p>
+<p>© 2026 Nigeria All Round Advertisement Agency</p>
 </footer>
+
+<script>
+function sendToWhatsApp() {
+    var name = document.getElementById("name").value;
+    var business = document.getElementById("business").value;
+    var service = document.getElementById("service").value;
+    var message = document.getElementById("message").value;
+
+    var text = "Hello, my name is " + name +
+               ". Business Name: " + business +
+               ". Advert Type: " + service +
+               ". Details: " + message;
+
+    var url = "https://wa.me/2348145891674?text=" + encodeURIComponent(text);
+    window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
