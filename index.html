@@ -145,24 +145,9 @@ href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%2
 <a class="call-btn" href="tel:08077063558">📞 Call Us</a>
 </div>
 
-<!-- PAYMENT INFO -->
-<div class="section">
-<h2>Payment Information</h2>
-
-<div class="box">
-<p><strong>Bank:</strong> OPay</p>
-<p><strong>Account Number:</strong> 8145891674</p>
-<p><strong>Account Name:</strong> Uyi Mike Madojemu</p>
-<hr style="border-color:#d4af37;">
-<p><strong>Bank:</strong> Polaris Bank</p>
-<p><strong>Account Number:</strong> 3050312834</p>
-<p><strong>Account Name:</strong> Uyi Mike Madojemu</p>
-</div>
-</div>
-
 <!-- CLIENT FORM -->
 <div class="section">
-<h2>Submit Advert & Payment Details</h2>
+<h2>Submit Advert Details</h2>
 
 <form onsubmit="submitForm(); return false;">
 <input id="name" placeholder="Your Full Name" required>
@@ -178,13 +163,31 @@ href="https://wa.me/2348145891674?text=Hello%20I%20am%20interested%20in%20your%2
 <option>Audio Advertisement</option>
 </select>
 
+<textarea id="message" rows="4" placeholder="Advert details"></textarea>
+
 <input id="amount" placeholder="Amount Paid (₦)" required>
 <input id="reference" placeholder="Payment Reference / Narration" required>
 
-<textarea id="message" rows="4" placeholder="Advert details"></textarea>
-
 <button type="submit">Send Details</button>
 </form>
+</div>
+
+<!-- PAYMENT INFO (Moved to Bottom) -->
+<div class="section">
+<h2>Payment Information</h2>
+
+<div class="box">
+<p><strong>Bank:</strong> OPay</p>
+<p><strong>Account Number:</strong> 8145891674</p>
+<p><strong>Account Name:</strong> Uyi Mike Madojemu</p>
+<hr style="border-color:#d4af37;">
+<p><strong>Bank:</strong> Polaris Bank</p>
+<p><strong>Account Number:</strong> 3050312834</p>
+<p><strong>Account Name:</strong> Uyi Mike Madojemu</p>
+<p style="color:#c9ab4b;">
+Please make your payment and submit your payment reference above.
+</p>
+</div>
 </div>
 
 <!-- ADMIN DASHBOARD -->
@@ -241,6 +244,7 @@ Details: ${message.value}`;
     window.open("https://wa.me/2348145891674?text=" + encodeURIComponent(text), "_blank");
 }
 
+// ADMIN DASHBOARD
 function loadDashboard() {
     const pin = prompt("Enter Admin PIN:");
     if (pin !== ADMIN_PIN) return;
@@ -263,7 +267,7 @@ function loadDashboard() {
     });
 }
 
-/* Open dashboard with URL #admin */
+// Open dashboard with URL #admin
 if (location.hash === "#admin") {
     loadDashboard();
 }
